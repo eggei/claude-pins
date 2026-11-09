@@ -1,0 +1,15 @@
+{
+  "name": "claude-pins",
+  "owner": {
+    "name": "eggei"
+  },
+  "metadata": {
+    "description": "Pins: pin Claude Code replies and reopen them from a side pane"
+  },
+  "plugins": [
+    {
+      "name": "pins",
+      "source": "./"
+    }
+  ]
+}
