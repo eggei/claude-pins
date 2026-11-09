@@ -4,17 +4,23 @@ I kept scrolling back up through long Claude Code sessions to find that one repl
 
 ![Pinning a reply and opening it from the Pins pane](docs/demo.gif)
 
+## What it does
+
+- **Pin exactly what matters.** Drag over part of a reply and run `/pin`, or pin the whole last reply. The highlight vanishes when you type, but your selection is still remembered.
+- **Pins keep their formatting.** You get the original markdown, with code blocks, lists and clickable links, not a flat copy of the screen.
+- **Always beside the chat.** Pins live in a side pane that opens on its own when a session starts and you have pins saved.
+- **Works across sessions.** Pin something in one session and open it from any other, in any project. Each pin shows when you saved it, which session it came from and the project folder, and session names stay current if you rename one.
+- **Never in your way.** `/pin`, `/pins` and `/unpin` run instantly, even while Claude is mid-reply, and confirm with a toast instead of adding to your thread.
+- **Keyboard first.** Arrow keys to move, `1`–`9` to jump, then copy, unpin or close with one key each.
+- **Private by design.** Pins stay on your machine and the plugin makes no network requests.
+
 ## How I use it
 
 | Run | What it does |
 | --- | --- |
-| `/pin [title]` | Pins what you selected with the mouse (fullscreen mode), or the last reply if nothing is selected. The pin keeps the original markdown and links, not just the text on screen. |
+| `/pin [title]` | Pins what you selected with the mouse (fullscreen mode), or the last reply if nothing is selected. |
 | `/pins` | Opens the Pins pane and puts focus in it. |
 | `/unpin <number\|all>` | Removes a pin by its number in the list, or all of them. |
-
-All three run right away, even while Claude is mid-reply, and answer with a toast, so they don't clutter your thread.
-
-To pin part of a reply: drag over it, then run `/pin`. The highlight disappears the moment you press a key, but don't worry, the selection is still remembered and gets pinned.
 
 Inside the Pins pane (click it, or press `ctrl+x tab` to focus it):
 
@@ -26,8 +32,6 @@ Inside the Pins pane (click it, or press `ctrl+x tab` to focus it):
 | `r` | Refresh. Picks up pins you saved in another session and updates session names if you renamed one. This also happens on `/pins` and whenever you focus the pane. |
 | `b` / `c` / `d` | In an open pin: back, copy, unpin |
 | `x` | Close the pane. It stays closed in every session, and `/pin` won't pop it back open, until you run `/pins` again. |
-
-An open pin shows when you pinned it, which session it came from, and the project folder. Links in it open in your browser.
 
 ## Install
 
