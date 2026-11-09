@@ -9,6 +9,7 @@
   "homepage": "https://github.com/eggei/claude-pins",
   "repository": "https://github.com/eggei/claude-pins",
   "license": "MIT",
+  "icon": "./.claude-plugin/icon.png",
   "keywords": [
     "pins",
     "bookmarks",
