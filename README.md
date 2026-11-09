@@ -43,7 +43,7 @@ Or from a shell:
 claude plugin install pins --marketplace eggei/claude-pins
 ```
 
-You'll need Claude Code 2.1.275 or later, in a terminal.
+You'll need Claude Code 2.1.275 or later, in a terminal. The shell command needs 2.1.292 or later.
 
 ## Here is what I use in my own setup
 
