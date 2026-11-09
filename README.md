@@ -53,12 +53,7 @@ Plugins can't ship key bindings, so add these to your own `~/.claude/keybindings
     {
       "context": "Chat",
       "bindings": {
-        "ctrl+x p": "command:pin"
-      }
-    },
-    {
-      "context": "Global",
-      "bindings": {
+        "ctrl+x p": "command:pin",
         "ctrl+x up": "command:pins",
         "ctrl+x right": "command:pins"
       }
@@ -74,7 +69,7 @@ Plugins can't ship key bindings, so add these to your own `~/.claude/keybindings
 }
 ```
 
-`ctrl+x p` pins, and `ctrl+x up` or `ctrl+x right` opens the Pins pane and jumps into it from anywhere, including from inside another pane. The `Pane` entries replace the default pane resize on those two keys; `ctrl+x left` and `ctrl+x down` still resize a pane. Claude Code won't move focus out of a chat input that has text in it, so with a draft typed, clear it first or use `ctrl+x tab`.
+`ctrl+x p` pins, and `ctrl+x up` or `ctrl+x right` opens the Pins pane and jumps into it, from the chat input or from inside another pane. Keep them out of the `Global` context: a `ctrl+x` chord there can swallow the plain `ctrl+x` that agent view uses to stop a session. The `Pane` entries replace the default pane resize on those two keys; `ctrl+x left` and `ctrl+x down` still resize a pane. Claude Code won't move focus out of a chat input that has text in it, so with a draft typed, clear it first or use `ctrl+x tab`.
 
 ## Privacy
 
