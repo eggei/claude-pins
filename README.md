@@ -2,6 +2,8 @@
 
 I kept scrolling back up through long Claude Code sessions to find that one reply: the deploy checklist, the command that finally worked, the plan we agreed on. So I built Pins. Pin a reply, or just the part you selected, and it stays in a pane beside the chat, across sessions, one keypress away.
 
+![Pinning a reply and opening it from the Pins pane](docs/demo.gif)
+
 ## How I use it
 
 | Run | What it does |
