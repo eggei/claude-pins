@@ -237,8 +237,11 @@ export const register: Register = on => {
     return next(e)
   })
 
-  on('classic.SessionStart', { source: ['clear', 'resume', 'fork'] }, async ($, e, next) => {
-    await syncPins($).catch(() => undefined)
+  // A /clear or a resume keeps the process (and the pane) but swaps the conversation, and no
+  // session.start follows, so resync here. This used to hook classic.SessionStart, which a managed
+  // plugin above the user tier can send past with next.to, skipping this hook on every start.
+  on('session.end', async ($, e, next) => {
+    if (e.reason === 'clear' || e.reason === 'resume') await syncPins($).catch(() => undefined)
 
     return next(e)
   })

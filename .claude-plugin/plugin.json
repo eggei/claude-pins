@@ -1,6 +1,6 @@
 {
   "name": "pins",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pin replies or selected text and reopen them from a side pane, across sessions",
   "author": {
     "name": "eggei",
